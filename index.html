@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>simpleshun</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+	</style>
+</head>
+
+<body>
+	<h1>
+		SimpleShun
+	</h1>
+	<div class="navbar">
+		<span class="linkbut" hx-get="./swap.html" hx-swap="innerhtml" hx-target=".main" hx-trigger="load,click"
+			hx-select=".home">Home</span>
+		<span class="linkbut" hx-get="./swap.html" hx-swap="innerhtml" hx-target=".main" hx-trigger="click"
+			hx-select=".image">Images</span>
+	</div>
+	<hr>
+	<div class="fcontainer">
+		<div class="main">
+			Blink and i'm gone
+		</div>
+	</div>
+	<hr>
+	<footer>- shun</footer>
+</body>
+
+</html>
